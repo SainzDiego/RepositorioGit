@@ -35,7 +35,7 @@ public class Acceso_al_Sistema extends JFrame {
 			}
 		});
 	}
-
+// Cambio realizado
 	/**
 	 * Create the frame.
 	 */
