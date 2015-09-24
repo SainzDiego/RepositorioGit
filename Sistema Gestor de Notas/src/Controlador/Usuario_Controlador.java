@@ -12,8 +12,8 @@ private Usuario usuarios;
 	public Usuario_Controlador(){
 		
 	}
-    public boolean verificar (int id, String usuario,String contraseña){
-    	usuarios = new Usuario(id, usuario,contraseña);
+    public boolean verificar (String usuario,String contraseña){
+    	usuarios = new Usuario(usuario,contraseña);
     	return this.usuarios.seleccionarU(usuario, contraseña);
     }
 }

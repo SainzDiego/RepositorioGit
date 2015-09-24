@@ -14,9 +14,8 @@ public class Usuario extends Persona{
 		super();
 	}
 	
-	public Usuario(int id, String nombreU, String cargo){
+	public Usuario(String nombreU, String cargo){
 
-		this.idUsuario = id;
 		this.nombreU = nombreU;
 		this.cargo = cargo;
 	}
@@ -67,8 +66,7 @@ public class Usuario extends Persona{
 		
 		boolean resul = false;
 		Conexion_Singleton con = Conexion_Singleton.getConexion();
-		String consulta= "SELECT * FROM  `usuario` WHERE nombreU = 'usuario' AND contraceniaU = 'usuario'";
-		
+		String consulta= "SELECT * FROM `usuario` WHERE nombreU = 'admin' AND contraceniaU = 'admin'";	
 		con.setConsulta(consulta);
 		try {
 			if(con.getListaResultado().last()) { 
